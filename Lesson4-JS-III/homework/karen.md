@@ -9,7 +9,6 @@ Functions that are part of an Object, inside the object.
 ```javascript
 object_name {
     function_name: function() {
-
     }
 }
 ```
