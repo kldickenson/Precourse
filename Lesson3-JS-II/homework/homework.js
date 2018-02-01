@@ -43,7 +43,8 @@ function isInteger(num) {
   // -10 -> true
   // otherwise return false
   // hint: you can solve this using Math.floor
-  return Math.floor(num) / num === 1 || num === 0;
+  // return Math.floor(num) / num === 1 || num === 0;
+  return num === Math.floor(num);
 }
 
 function fizzBuzz(num) {
@@ -68,17 +69,12 @@ function isPrime(num) {
   // hint: a prime number is only evenly divisible by itself and 1
   // hint2: you can solve this using a for loop
   // note: 0 and 1 are NOT considered prime numbers
-  if (num === 0 || num === 1) {
-    return false;
-  } else {
-    for (var i = 2; i < num; i++) {
-      if (num % i === 0) {
-        return false;
-      } else {
-        return true;
-      }
-    }
+  if (num === 0 || num === 1) return false;
+  if (num === 2) return true;
+  for (var i = 3; i < num; i++) {
+    if (num % i === 0) return false;
   }
+  return true;
 }
 
 function returnFirst(arr) {
@@ -124,15 +120,16 @@ function wordsToSentence(words) {
   // return a string that is all of the words concatenated together
   // spaces need to be between each word
   // example: ['Hello', 'world!'] -> 'Hello world!'
-  var sentence = '';
-  for (let i = 0; i < words.length; i++) {
-    if(i < words.length-1) {
-      sentence = sentence.concat(words[i], ' ');
-    } else {
-      sentence = sentence.concat(words[i]);
-    }
-  }
-  return sentence;
+  // var sentence = '';
+  // for (let i = 0; i < words.length; i++) {
+  //   if(i < words.length-1) {
+  //     sentence = sentence.concat(words[i], ' ');
+  //   } else {
+  //     sentence = sentence.concat(words[i]);
+  //   }
+  // }
+  // return sentence;
+  return words.join(' ');
 }
 
 function contains(arr, item) {
@@ -151,17 +148,16 @@ function addNumbers(numbers) {
 function averageTestScore(testScores) {
   // testScores is an array.  Iterate over testScores and compute the average.
   // return the average
-  const reducer = (total, currentValue) => total + currentValue;
-  return testScores.reduce(reducer) / testScores.length;
+  return addNumbers(testScores) / testScores.length;
 }
 
 function largestNumber(numbers) {
   // numbers is an array of integers
   // return the largest integer
   numbers.sort( function(a, b) {
-    return a - b;
+    return b - a;
   });
-  return numbers[numbers.length-1];
+  return numbers[0];
 }
 
 // Do not modify code below this line.
