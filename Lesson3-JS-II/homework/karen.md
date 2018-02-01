@@ -1,4 +1,5 @@
 ## for statement
+    A for statement is a way to loop through an array one item at a time.
 
 ## &&, ||, !
     && = and (double ampersands)
