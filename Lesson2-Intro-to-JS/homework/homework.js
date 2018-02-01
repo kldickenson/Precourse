@@ -74,22 +74,14 @@ function lessThanNinety(num) {
   // return true if the function argument: num , is less than ninety
   // otherwise return false
   // code here
-  if (num < 90) {
-    return true;
-  } else {
-    return false;
-  }
+  return num < 90;
 }
 
 function greaterThanFifty(num) {
   // return true if num is greater than fifty
   // otherwise return false
   // code here
-  if (num > 50) {
-    return true;
-  } else {
-    return false;
-  }
+  return num > 50;
 }
 
 function getRemainder(x, y) {
@@ -102,21 +94,14 @@ function isEven(num) {
   // return true if num is even
   // otherwise return false
   // code here
-  if (num % 2 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+ return num % 2 === 0;
 }
 
 function isOdd(num) {
   // return true if num is odd
   // otherwise return false
   // code here
-  if (num % 2 === 1) {
-    return true;
-  } else {
-    return false;
+  return num % 2 === 1;
   }
 }
 
@@ -169,8 +154,8 @@ function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
   // 'Sam' -> 'Hello Sam!'
   // code here
-  var hello = 'Hello ';
-  var punc = '!';
+  const hello = 'Hello ';
+  const punc = '!';
   return hello + name + punc;
 }
 
