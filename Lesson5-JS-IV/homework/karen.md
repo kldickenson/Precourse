@@ -17,9 +17,10 @@ names.forEach(function(name, i) {
 ```
 
 ## arguments
-
+variables passed to a function.
 
 ## prototype
+
 
 ## Constructors
 aka Classes. Templates for creating objects with specific keys and methods.

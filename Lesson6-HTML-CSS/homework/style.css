@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(https://assets3.thrillist.com/v1/image/1813265/size/tmg-article_default_mobile.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    /* display: flex;
+    align: column;
+    justify-content: space-evenly; */
+}
+body * {
+    margin: 0 auto;
+    /* text-align: center;
+    align-self: flex-start; */
+}
+        h1 {
+           color: cornflowerblue;
+       }
+
+       img {
+           width: 400px;
+       }
+       div {
+           /* margin: 0 auto; */
+       }
+
+       .divClass {
+       }
+
+       .headline {
+           /* position: fixed;
+           background: rgba(256,256,256,.5);
+           width: 100%; */
+       }
+       .startContent {
+           padding-top: 200px;
+       }
+
+       #spanID {
+           font-size: 18px;
+           margin: 50px;
+       }
+
+       #thirdDiv {
+           height: 600px; width: 500px;
+           /* height: auto;
+           margin-top: 3rem; */
+           border: solid 2px pink;
+           padding: 50px;
+           background: rgba(161, 191, 248, .5);
+       }
+       ul {
+           margin: 0; padding: 0 0 0 20px;
+       }
+       ul li {
+           list-style: none;
+           background: url(sushi-icon-50x50.png) left center no-repeat;
+           padding: 20px 50px;
+           list-style-position: inside;
+           vertical-align: middle;
+       }
